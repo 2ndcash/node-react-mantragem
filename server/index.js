@@ -43,7 +43,7 @@ const dbName = config.get('db').dbName
 let mongodb_url = "";
 
 if (process.env.NODE_ENV == 'production') {
-    mongodb_url = `mongodb://${config.get('db').dbUser}:${config.get('db').dbPass}@${config.get('db').dbHost}/${dbName}`
+    mongodb_url = `mongodb://${config.get('db').dbUser}:${config.get('db').dbPass}@${config.get('db').dbHostClient}/${dbName}`
 }
 else mongodb_url = `${url}/${dbName}`
 
