@@ -1,0 +1,77 @@
+/* form p label{
+    margin: 0 auto 15px;
+    display: block;
+    width: 48%;
+    color: #ff0000;
+} */
+
+/*Textbox*/
+.ck-editor__editable {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 550px;
+}
+
+.ck-editor__editable p {
+    color: black;
+}
+/*Toolbar*/
+.ck-editor__top {
+    min-width: 550px;
+}
+
+.ck.ck-content {
+    font-size: 18px;
+}
+
+.ck.ck-content ul,
+.ck.ck-content ul li{
+  list-style-type: inherit;
+}
+
+.ck.ck-content ul {
+  /* Default user agent stylesheet. */
+  padding-left: 40px;
+}
+
+.rdw-option-wrapper { height: 27px !important;}
+.rdw-editor-main { padding: 10px; }
+
+.slip label {
+    background-color: #133664;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.layout-box .box-s4 {
+    display: inline-block;
+    width: 100%;
+    height: 746;
+    border: 1px solid #CED4DA;
+    /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%); */
+}
+
+.confirm-btn,
+.noti-sent-btn,
+.noti-interest {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    color: #0d1f37;
+    background-color: #fff;
+    border: 1px solid #0d1f37;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.confirm-btn:hover,
+.noti-sent-btn:hover,
+.noti-interest:hover {
+    background-color: #464646;
+    color: #fff;
+    border: transparent;
+}

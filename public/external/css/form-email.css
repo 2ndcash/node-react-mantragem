@@ -1,0 +1,566 @@
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+.wrapper-cover {
+    position: relative;
+}
+
+.layout-cover {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.box-banner-home {
+    border-radius: 10px;
+}
+
+.box-banner-home2 {
+    border-radius: 0;
+}
+
+.box-banner-home,
+.box-banner-home2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 22.25%;
+    margin-bottom: 25px;
+}
+
+.box-banner-home a,
+.box-banner-home2 a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.box-banner-home a img,
+.box-banner-home2 a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* .box-logo img {
+    width: 10%;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+} */
+
+.box-title-form h1 {
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #112b5f;
+    text-align: center;
+}
+
+.form-vote-sunmit {
+    margin: 0;
+    overflow: hidden;
+}
+
+.layout-from-vote label {
+    display: block;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+input[type=checkbox] {
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.control-btn {
+    margin: 0 0 25px;
+    position: relative;
+    display: block;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.btn-more {
+    color: #ED0006;
+}
+
+.btn-more,
+.btn-share-coupon {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    margin: 25px 10px;
+    font-size: 22px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 24%);
+}
+
+.btn-share-coupon {
+    background-color: #707070;
+}
+
+.email-consent {
+    margin: 0 15px 10px;
+}
+
+.img-ft {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 22.25%;
+}
+
+.img-ft a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.img-ft a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coupon {
+    margin: 0 auto;
+    width: 53%;
+    height: auto;
+}
+
+.coupon {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+}
+
+.coupon-detail {
+    margin: 10px 15px;
+}
+
+.coupon-img {
+    position: relative;
+}
+
+.coupon-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* .wrapper-form-vote .container {
+    width: 750px;
+} */
+
+.stamp {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    background-color: #fff;
+    width: 100px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 7px 15px;
+    text-align: center;
+}
+
+.modal-announce .modal-content {
+    padding: 0;
+}
+
+.modal-announce .modal-header {
+    padding: 0;
+}
+
+.modal-announce button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+
+.modal-header span {
+    font-size: 30px;
+}
+
+.modal-header span {
+    color: #333;
+}
+
+.modal-announce .box-img-announce {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-announce .box-img-announce img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.modal-dialog {
+    width: 600px;
+    margin: 150px auto;
+}
+
+.table-responsive td .view-detail-all {
+    color: #000;
+    text-decoration: none;
+}
+
+.modal-view-detail .modal-header h4 {
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.modal-view-detail .modal-body {
+    margin: 15px 30px;
+    font-size: 20px;
+}
+
+.modal-view-detail .modal-body td {
+    height: 70px;
+}
+
+.box-detail-email {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.box-detail-email p {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0 150px;
+    color: #000;
+}
+
+.box-detail-email h3 {
+    color: #000;
+    font-weight: bold;
+    margin: 0 0px 20px;
+}
+
+.layout-from-vote .checkbox-inline {
+    display: inline-block;
+}
+
+.choose-check {
+    margin: 0 15px;
+}
+
+.choose-check input {
+    margin-right: 10px;
+    top: -2px;
+    position: relative !important;
+}
+
+.email-consent input {
+    margin-right: 10px;
+    position: relative !important;
+}
+
+.avatar-upload {
+    position: relative;
+    max-width: 150px;
+    margin: 50px auto 25px;
+}
+
+.avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+
+.avatar-edit input {
+    display: none;
+}
+
+.avatar-edit label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+
+.avatar-edit label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.avatar-edit label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.avatar-preview {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 100%;
+    border: transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-preview #imagePreview {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.please-choose {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.panel-body label,
+.layout-form .checkbox-inline {
+    background-color: transparent;
+    color: #000;
+}
+
+.panel-body label,
+.layout-form .checkbox-inline input {
+    padding-left: 15px;
+    position: relative !important;
+}
+
+.box-bg-2 {
+    background-color: #051565;
+    margin-top: 50px;
+    color: #fff;
+}
+
+textarea.form-control {
+    height: auto;
+    margin: 8px 0;
+}
+
+.nopaddingleft {
+    padding-left: 0;
+}
+
+.nopaddingright {
+    padding-right: 0;
+}
+
+.box-reset {
+    margin-right: 15px;
+}
+
+.photo-show {
+    position: relative;
+    overflow: hidden;
+    /* padding-top: 56.25%; */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 150px;
+}
+
+
+/* .photo-show a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} */
+
+.photo-show a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-img-correct {
+    position: relative;
+    overflow: hidden;
+    padding-top: 41.25%;
+    border-radius: 10px;
+    margin: 25px 150px;
+}
+
+.box-img-correct a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.box-detail-email h2,
+.box-bg-2 h3 {
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #112b5f;
+    text-align: center;
+}
+
+.box-bg-2 h3 {
+    color: #fff;
+    margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+    .form-vote-sunmit {
+        margin: 0px 0 0;
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    .control-btn {
+        margin: 0;
+    }
+    .btn-more {
+        margin: 0;
+    }
+    .wrapper-cover .container,
+    .wrapper-email-footer .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .box-banner-home2 {
+        margin-bottom: 0;
+    }
+    .wrapper-form-vote .container {
+        width: 100%;
+    }
+    .coupon {
+        margin: 0 auto 15px;
+        width: 80%;
+        height: auto;
+    }
+    .box-title-form h1,
+    .box-detail-email h2,
+    .box-bg-2 h3 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .modal-dialog {
+        width: 75%;
+        margin: 300px auto;
+    }
+    .modal-view-detail .modal-dialog {
+        width: 90%;
+        margin: 300px auto;
+    }
+    .modal-view-detail .modal-body {
+        margin: 15px 30px;
+        font-size: 16px;
+    }
+    .choose-check {
+        margin: 0px;
+    }
+    .layout-from-vote .checkbox-inline {
+        display: block;
+        margin-left: 0;
+    }
+    .box-detail-email p {
+        font-size: 16px;
+        margin: 0 0px;
+    }
+    .checkbox-inline+.checkbox-inline,
+    .radio-inline+.radio-inline {
+        margin-left: 0;
+        display: block;
+    }
+    .photo-show {
+        margin: 10px 0;
+    }
+    .box-img-correct {
+        margin: 10px 0;
+        padding-top: 56.25%;
+    }
+    .box-detail-email {
+        padding: 0;
+        margin: 25px 0 0;
+    }
+    .btn-more,
+    .btn-share-coupon {
+        width: 150px;
+        font-size: 19px;
+    }
+    .avatar-upload {
+        position: relative;
+        max-width: 150px;
+        margin: 25px auto;
+    }
+    .email-consent {
+        margin: 10px 15px;
+    }
+}

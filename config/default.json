@@ -1,0 +1,28 @@
+{
+    "baseUrl": "http://localhost:3006",
+    "db": {
+        "url": "mongodb://localhost",
+        "dbName": "mantragem"
+    },
+    "jwt": {
+        "salt": "bEVdGbLwGpWjC492R3MXd7UY"
+    },
+    "session": {
+        "secret": "6XMfexY7ELf5RKs8eEwvHD02S3l2KAfP"
+    },
+    "email": {
+        "host": "smtp-mail.outlook.com",
+        "username": "admin@2ndcash.co",
+        "password": "2nDc@sH.c0"
+    },
+    "facebook": {
+        "api_key": "764789631121973",
+        "api_secret": "c88d80948f3e35c24753d4ff79c37865",
+        "callback_url": "http://localhost:3006/auth/facebook/callback"
+    },
+    "AWSs3": {
+        "AWS_ACCESS_KEY": "AKIAIN2SA4ISP2BEMHGA",
+        "AWS_SECRET_ACCESS_KEY": "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",
+        "BUCKET_NAME": "mantragem-dev"
+    }
+}
