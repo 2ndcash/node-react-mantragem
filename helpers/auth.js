@@ -64,6 +64,7 @@ exports.middlewareCustomer = async (req, res, next) => {
             const user = await UserModel.findOne({ _id: token })
             if (!user) return res.status(401).send({ message: 'Unauthorized, No token provided.' })
 
+            req.user = user;
             return next()
         }
         else {

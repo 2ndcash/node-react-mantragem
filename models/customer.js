@@ -13,6 +13,7 @@ const ObjectSchema = new Schema({
     deleted: { type: Boolean, default: false },
     picture: { type: Schema.Types.ObjectId, ref: 'image_clients' },
     experiences: [{ type: Schema.Types.ObjectId, ref: 'experiences' }],
+    user: { type: Schema.Types.ObjectId, ref: 'users', required: true }
 }, {
         timestamps: true,
         collection: 'customers',

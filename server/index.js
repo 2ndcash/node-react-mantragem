@@ -42,12 +42,12 @@ const url = config.get('db').url // กำหนด url สำหรับ Mongo
 const dbName = config.get('db').dbName
 let mongodb_url = "";
 
-// if (process.env.NODE_ENV == 'production') {
-// mongodb_url = `mongodb://${config.get('db').dbUser}:${config.get('db').dbPass}@${config.get('db').dbHost}/${dbName}`
-// }
-// else mongodb_url = `${url}/${dbName}`
+if (process.env.NODE_ENV == 'production') {
+    mongodb_url = `mongodb://${config.get('db').dbUser}:${config.get('db').dbPass}@${config.get('db').dbHost}/${dbName}`
+}
+else mongodb_url = `${url}/${dbName}`
 
-mongodb_url = `${url}/${dbName}`
+// mongodb_url = `${url}/${dbName}`
 
 mongoose.connect(mongodb_url, {
     useNewUrlParser: true,

@@ -6,7 +6,7 @@ const { customer_running } = require('../helpers/generator')
 
 exports.Dashboard = async (req, res, next) => {
     try {
-        let filter = { deleted: false }
+        let filter = { deleted: false, user: req.user._id }
 
         const customers = await CustomerModal.aggregate([
             { $match: filter },
@@ -52,7 +52,7 @@ exports.Dashboard = async (req, res, next) => {
 
 exports.ListCard = async (req, res) => {
     try {
-        let cards = await CardModal.find({ deleted: false })
+        let cards = await CardModal.find({ deleted: false, user: req.user._id })
             .populate({ path: 'picture', select: '-_id filename originalName locationUrl' })
             .sort({ 'number': 1 })
             .lean().exec()
@@ -79,12 +79,13 @@ exports.NewCustomer = async (req, res) => {
         let { email, birthday, ref_code, card, number, sex } = req.body
         let customer = null;
 
-        customer = await CustomerModal.findOne({ deleted: false, email: email, birthday: birthday })
+        customer = await CustomerModal.findOne({ deleted: false, email: email, birthday: birthday, user: req.user._id })
         if (customer) {//Update
             customer.ref_code = ref_code;
             customer.card = card;
             customer.sex = sex;
             customer.number = number;
+            customer.user = req.user._id;
         }
         else { //Create
             customer = await CustomerModal.create({
@@ -94,11 +95,12 @@ exports.NewCustomer = async (req, res) => {
                 ref_code: ref_code,
                 sex: sex,
                 card: card,
-                number: number
+                number: number,
+                user: req.user._id
             })
         }
 
-        const _exprience = await ExperienceModal.create({ ref_code: ref_code, card: card, number: number })
+        const _exprience = await ExperienceModal.create({ ref_code: ref_code, card: card, number: number, user: req.user._id })
 
         const experiences = customer.experiences || [];
         experiences.push(_exprience._id)
@@ -119,7 +121,7 @@ exports.UpdateCustomer = async (req, res) => {
         let { mobile } = req.body
         let ref_code = "";
 
-        let customer = await CustomerModal.findOne({ deleted: false, _id: id })
+        let customer = await CustomerModal.findOne({ deleted: false, _id: id, user: req.user._id })
         if (customer) {
             customer.mobile = mobile;
             customer.save();

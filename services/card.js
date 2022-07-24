@@ -3,7 +3,7 @@ const CardModal = require('../models/card')
 
 exports.ClientListCard = async (req, res) => {
     try {
-        let cards = await CardModal.find({ deleted: false })
+        let cards = await CardModal.find({ deleted: false, user: req.user.id })
             .populate({ path: 'picture', select: '-_id filename originalName locationUrl' })
             .sort({ 'number': 1 })
             .lean().exec()
@@ -26,7 +26,7 @@ exports.ClientListCard = async (req, res) => {
 
 exports.ListCard = async (req, res) => {
     try {
-        let cards = await CardModal.find({ deleted: false })
+        let cards = await CardModal.find({ deleted: false, user: req.user.id })
             .populate({ path: 'picture', select: '-_id filename originalName locationUrl' })
             .sort({ 'number': 1 })
             .sort({ 'updatedAt': -1 })
@@ -56,7 +56,7 @@ exports.GetCard = async (req, res) => {
     try {
         const { id } = req.params
 
-        let card = await CardModal.findOne({ _id: id, deleted: false })
+        let card = await CardModal.findOne({ _id: id, deleted: false, user: req.user.id })
             .populate({ path: 'picture', select: '_id filename originalName locationUrl' })
             .lean().exec()
 
@@ -87,7 +87,7 @@ exports.AddCard = async (req, res, next) => {
     try {
         let body = req.body
 
-        if (await CardModal.countDocuments({ title: body.title, deleted: false }) > 0) {
+        if (await CardModal.countDocuments({ title: body.title, deleted: false, user: req.user.id }) > 0) {
             return res.send({ success: false, message: `ระบุ ${body.title} ซ้ำ` })
         }
 
